@@ -237,7 +237,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center content vertically */
   transition: transform 0.5s ease-in-out;
+  position: absolute; /* Position each slider absolutely */
+  top: 0; /* Align them to the top */
+  left: 0; /* Align them to the left */
 }
 
 .slider-img-container {
@@ -246,6 +250,7 @@ main {
   border-radius: 145px 10px 10px 145px;
   background-position: -90px 0px;
   cursor: pointer;
+  background-size: cover; /* Ensure the image covers the entire container */
 }
 .slider-img-container-1 {
   background: linear-gradient(90deg, rgba(30, 29, 29, 0.16) 25.08%, rgba(216, 216, 216, 0) 99.83%), url("../../src/media/images/banner-image-shopping.jpg") lightgray 50%/cover no-repeat;
@@ -265,7 +270,7 @@ main {
   color: #000;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: "Clash Grotesk Variable";
+  font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -276,7 +281,7 @@ main {
   color: #787676;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: "Clash Grotesk Variable";
+  font-family: "Poppins", sans-serif;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
