@@ -44,5 +44,5 @@ function redirectToPage(url) {
 document
   .querySelector('.button-registrer')
   .addEventListener('click', function () {
-    redirectToPage('./pages/sign-up.html');
+    redirectToPage('./sign-up.html');
   });
