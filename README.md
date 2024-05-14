@@ -1,6 +1,6 @@
 # Projet MDS: Intégration avec Framework CSS
 
-## URL PREVIEW: [eazy-peazy.netlify.app](https://eazy-peazy.netlify.app/)
+## URL PREVIEW: [https://eazy-peazy.netlify.app/](https://anthony-mini.github.io/mds-ezay-peazy/)
 
 ## URL FIGMA: [maquette-eazy-peazy](https://www.figma.com/community/file/1372125740806039889/eazy-peazy)
 
