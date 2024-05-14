@@ -36,3 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial display
   updateSlider(currentIndex);
 });
+
+function redirectToPage(url) {
+  window.location.href = url;
+}
+
+document
+  .querySelector('.button-registrer')
+  .addEventListener('click', function () {
+    redirectToPage('./pages/sign-up.html');
+  });
