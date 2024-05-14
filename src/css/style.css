@@ -1,4 +1,12 @@
 @charset "UTF-8";
+h1,
+h2,
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 /*************
     reset
 **************/
@@ -196,14 +204,6 @@ template {
 }
 
 * {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-h1,
-h2,
-h3 {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
