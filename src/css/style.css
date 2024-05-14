@@ -235,23 +235,31 @@ main {
 }
 
 .slider-img-container {
-  width: 295px;
+  width: 310px;
   height: 295px;
   border-radius: 145px 10px 10px 145px;
   cursor: pointer;
+}
+.slider-img-container-1 {
+  background: url("../../src/media/images/banner-image-shopping.jpg");
   background-color: lightgray;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.slider-img-container-1 {
-  background: linear-gradient(90deg, rgba(30, 29, 29, 0.16) 25.08%, rgba(216, 216, 216, 0) 99.83%), url("../../src/media/images/banner-image-shopping.jpg") lightgray 50%/cover no-repeat;
-}
 .slider-img-container-2 {
-  background: linear-gradient(90deg, rgba(30, 29, 29, 0.16) 25.08%, rgba(216, 216, 216, 0) 99.83%), url("../../src/media/images/banner-image-shopping-2.jpg") lightgray 50%/cover no-repeat;
+  background: url("../../src/media/images/banner-image-shopping-2.jpg");
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .slider-img-container-3 {
-  background: linear-gradient(90deg, rgba(30, 29, 29, 0.16) 25.08%, rgba(216, 216, 216, 0) 99.83%), url("../../src/media/images/banner-image-payment.jpg") lightgray 50%/cover no-repeat;
+  background: url("../../src/media/images/banner-image-payment.jpg");
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .slider-description {
@@ -264,7 +272,7 @@ main {
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 90.909% */
+  line-height: 20px;
   font-family: "ClashGrotesk-Medium", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -276,7 +284,7 @@ main {
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 105.263% */
+  line-height: 20px;
   margin-top: 30px;
   font-family: "ClashGrotesk-Medium", sans-serif;
   font-optical-sizing: auto;
@@ -286,7 +294,7 @@ main {
 .slide-indicator {
   display: flex;
   justify-content: center;
-  margin: 30px 0 55px;
+  margin: 0px 0 60px;
 }
 
 .slide-indicator span {
@@ -301,6 +309,10 @@ main {
 
 .slide-indicator span.active {
   background-color: #514eb7;
+}
+
+.button-section {
+  padding-bottom: 70px;
 }
 
 button {
