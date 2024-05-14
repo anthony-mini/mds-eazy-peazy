@@ -1,6 +1,14 @@
+html {
+  background-color: $bg-global-light;
+}
+
 main {
-  padding: 70px 25px;
+  padding: 50px 25px;
   height: 100vh;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slider-img-container {
@@ -60,4 +68,18 @@ main {
       background-color: #514eb7;
     }
   }
+}
+
+button {
+  width: 274px;
+  height: 58.185px;
+  border-radius: 45px;
+  border-color: transparent;
+  border: none;
+  background-color: $bg-global-blue;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
 }
