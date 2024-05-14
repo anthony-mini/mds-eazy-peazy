@@ -1,8 +1,7 @@
 @charset "UTF-8";
-h1,
-h2,
-h3 {
-  font-family: "Quicksand", sans-serif;
+@import url("../../src/fonts/ClashGrotesk_Complete/Fonts/WEB/css/clash-grotesk.css");
+* {
+  font-family: "ClashGrotesk-Medium", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -201,12 +200,6 @@ template {
 
 [hidden] {
   display: none; /*- Add the correct display in IE 10. -*/
-}
-
-* {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 /* style.css */
