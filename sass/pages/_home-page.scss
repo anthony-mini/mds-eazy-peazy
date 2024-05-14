@@ -48,9 +48,24 @@ main {
   }
 
   &-2 {
+    background: linear-gradient(
+        90deg,
+        rgba(30, 29, 29, 0.16) 25.08%,
+        rgba(216, 216, 216, 0) 99.83%
+      ),
+      url('../../src/media/images/banner-image-shopping-2.jpg') lightgray 50% /
+        cover no-repeat;
+    background-position: -90px 0px;
   }
 
   &-3 {
+    background: linear-gradient(
+        90deg,
+        rgba(30, 29, 29, 0.16) 25.08%,
+        rgba(216, 216, 216, 0) 99.83%
+      ),
+      url('../../src/media/images/banner-image-payment.jpg') lightgray 50% /
+        cover no-repeat;
   }
 }
 
