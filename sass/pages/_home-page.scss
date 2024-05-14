@@ -27,11 +27,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
   transition: transform 0.5s ease-in-out;
-  position: absolute; /* Position each slider absolutely */
-  top: 0; /* Align them to the top */
-  left: 0; /* Align them to the left */
 }
 
 .slider-img-container {
@@ -40,7 +36,6 @@ main {
   border-radius: 145px 10px 10px 145px;
   background-position: -90px 0px;
   cursor: pointer;
-  background-size: cover; /* Ensure the image covers the entire container */
 
   &-1 {
     background: linear-gradient(
@@ -81,7 +76,7 @@ main {
   color: #000;
   text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Clash Grotesk Variable';
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -92,7 +87,7 @@ main {
   color: #787676;
   text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Clash Grotesk Variable';
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
