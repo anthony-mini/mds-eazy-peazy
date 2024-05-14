@@ -1,5 +1,7 @@
 /* style.css */
 
+@import url('../../src/fonts/ClashGrotesk_Complete/Fonts/WEB/css/clash-grotesk.css');
+
 html {
   background-color: $bg-global-light;
 }
@@ -34,8 +36,11 @@ main {
   width: 295px;
   height: 295px;
   border-radius: 145px 10px 10px 145px;
-  background-position: -90px 0px;
   cursor: pointer;
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &-1 {
     background: linear-gradient(
@@ -75,24 +80,26 @@ main {
 .slider-description h1 {
   color: #000;
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: 'Clash Grotesk Variable';
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 90.909% */
+  font-family: 'ClashGrotesk-Medium', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .slider-description p {
   color: #787676;
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: 'Clash Grotesk Variable';
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 105.263% */
   margin-top: 30px;
+  font-family: 'ClashGrotesk-Medium', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .slide-indicator {
