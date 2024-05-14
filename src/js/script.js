@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const sliders = document.querySelectorAll('.slider');
   const indicators = document.querySelectorAll('.slide-indicator span');
+  const imgContainers = document.querySelectorAll('.slider-img-container');
   let currentIndex = 0;
 
   function updateSlider(index) {
@@ -16,8 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
     indicators[index].classList.add('active');
   }
 
-  indicators.forEach((indicator, index) => {
+  indicators.forEach((indicator) => {
     indicator.addEventListener('click', () => {
+      const index = parseInt(indicator.dataset.index);
+      currentIndex = index;
+      updateSlider(index);
+    });
+  });
+
+  imgContainers.forEach((imgContainer) => {
+    imgContainer.addEventListener('click', () => {
+      const index = parseInt(imgContainer.dataset.index);
       currentIndex = index;
       updateSlider(index);
     });
