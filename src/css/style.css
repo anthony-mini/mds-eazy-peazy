@@ -356,17 +356,39 @@ button {
 }
 
 /* styles.css */
-.container-registre {
+.container-toastr {
   height: auto;
 }
-
-.container-title {
+.container-toastr::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.container-toastr .toaster {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 2;
+  border-radius: 15px;
+}
+.container-toastr .hidden {
+  display: none;
+}
+.container-toastr .container-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
-.registre-title {
+.container-toastr .registre-title {
   color: #000;
   text-align: left;
   font-size: 24px;
@@ -375,8 +397,7 @@ button {
   line-height: 20px;
   margin: 0 0 20px 0;
 }
-
-.registre-description {
+.container-toastr .registre-description {
   color: #787676;
   font-size: 19px;
   font-style: normal;
@@ -385,16 +406,14 @@ button {
   text-align: left;
   margin: 0 0 30px 0;
 }
-
-form {
+.container-toastr form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
 }
-
-label {
+.container-toastr label {
   color: #000;
   text-align: center;
   font-size: 20px;
@@ -402,8 +421,7 @@ label {
   font-weight: 500;
   line-height: 20px;
 }
-
-.input-container {
+.container-toastr .input-container {
   display: flex;
   width: 100%;
   height: 46px;
@@ -415,29 +433,25 @@ label {
   background: rgba(118, 118, 128, 0.12);
   margin: 15px 0 20px 0px;
 }
-
-.container-submit {
+.container-toastr .container-submit {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
-.input-container .icon {
+.container-toastr .input-container .icon {
   font-size: 20px;
   color: #777;
   margin-right: 10px;
 }
-
-input {
+.container-toastr input {
   border: none;
   background: none;
   outline: none;
   font-size: 16px;
   flex-grow: 1;
 }
-
-.registre {
+.container-toastr .registre {
   background-color: #514eb7;
   border: none;
   border-radius: 25px;
@@ -453,25 +467,21 @@ input {
   line-height: 20px;
   margin-top: 10px;
 }
-
-button:hover {
+.container-toastr button:hover {
   background-color: #3e3a97;
 }
-
-.alternate {
+.container-toastr .alternate {
   text-align: center;
   font-size: 14px;
   color: #777;
   margin-bottom: 20px;
 }
-
-.social-buttons {
+.container-toastr .social-buttons {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-.social-buttons button {
+.container-toastr .social-buttons button {
   width: 100%;
   padding: 15px;
   font-size: 16px;
@@ -480,9 +490,8 @@ button:hover {
   background: none;
   cursor: pointer;
 }
-
-button.google,
-button.facebook {
+.container-toastr button.google,
+.container-toastr button.facebook {
   border: 1px solid #000;
   border-radius: 25px;
   cursor: pointer;

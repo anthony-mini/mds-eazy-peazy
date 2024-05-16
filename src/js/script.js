@@ -46,3 +46,9 @@ document
   .addEventListener('click', function () {
     redirectToPage('./sign-up.html');
   });
+
+// Toastr display option
+
+document.querySelector('.registre').addEventListener('click', function () {
+  document.querySelector('.toaster').classList.remove('hidden');
+});
