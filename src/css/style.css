@@ -514,7 +514,7 @@ button.facebook {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 50vh;
+  height: 55vh;
   width: 100%;
   background-color: #ffffff;
   border-top-left-radius: 20px;
@@ -525,7 +525,10 @@ button.facebook {
 }
 
 .popup-content {
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .popup .close {
@@ -536,12 +539,56 @@ button.facebook {
   cursor: pointer;
 }
 
+.success-title-popup {
+  color: #000;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Clash Grotesk Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.success-registration-btn {
+  background-color: #514eb7;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 274px;
+  height: 58.185px;
+  flex-shrink: 0;
+  border-radius: 45px;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
 @keyframes slideUp {
   from {
     transform: translateY(100%);
   }
   to {
     transform: translateY(0);
+  }
+}
+/* Pulse effect */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .layout-loader {
